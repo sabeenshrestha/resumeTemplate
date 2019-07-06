@@ -49,6 +49,15 @@ section {
   border-bottom: 1px solid lightgrey;
 }
 
+section1 {
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-gap: 20px;
+  padding: 65px 0;
+  border-bottom: 1px solid lightgrey;
+  height: 0px;
+}
+
 section:last-child {
   border-bottom: none;
 }
@@ -72,7 +81,7 @@ img.avatar {
 }
 
 .my-title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 300;
   color: #236FB2;
 }
@@ -160,7 +169,7 @@ img.avatar {
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 960px) {
   section {
     grid-template-columns: 1fr;
   }
@@ -186,4 +195,9 @@ img.avatar {
 
 ul.square-bullet {
   list-style-type: square;
+}
+
+div.about {
+    position: relative;
+    top: -90px;
 }
